@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 </script>
 
 <template>
-  <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
-  <view-router />
+  <button @click="() => router.push({path: '/home'})">Home</button>
+  <button @click="() => router.push({path: '/license_plate'})">License Plate</button>
+  <button @click="() => router.push({path: '/vehicle_detect'})">Vehicle Detect</button>
+  <router-view />
 </template>
 
 <style>
