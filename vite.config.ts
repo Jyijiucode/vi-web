@@ -21,5 +21,15 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src')
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/assets/css/variable.scss";'
+      }
+      // styl: {
+      //   additionalData: '$injectedColor ?= orange'
+      // }
+    }
   }
 })

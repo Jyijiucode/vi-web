@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>Vehicle Plate</h1>
+  <h1>Vehicle Damage</h1>
 </template>
 
 <style lang="scss" scoped>

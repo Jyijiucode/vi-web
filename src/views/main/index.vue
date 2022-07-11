@@ -3,7 +3,7 @@ import elementSlider from '../../components/element-slider.vue'
 </script>
 
 <template>
-  <h1>Home</h1>
+  <h1>Main</h1>
   <element-slider />
 </template>
 

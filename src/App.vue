@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
+import GlobalHeader from './components/layout/GlobalHeader.vue'
+import GlobalFooter from './components/layout/GlobalFooter.vue'
 </script>
 
 <template>
-  <button @click="() => router.push({path: '/home'})">Home</button>
-  <button @click="() => router.push({path: '/license_plate'})">License Plate</button>
-  <button @click="() => router.push({path: '/vehicle_detect'})">Vehicle Detect</button>
-  <router-view />
+  <div class="common-layout">
+    <el-container>
+      <el-header>
+        <global-header />
+      </el-header>
+      <el-main class="main">
+        <router-view />
+      </el-main>
+      <el-footer>
+        <global-footer />
+      </el-footer>
+    </el-container>
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
 </style>
