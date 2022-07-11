@@ -40,7 +40,9 @@ const handleSelect = (key: string, keyPath: string[]) => {
     :ellipsis="false"
     @select="handleSelect"
   >
-    <el-menu-item index="main">LOGO</el-menu-item>
+    <el-menu-item index="main">
+      <img src="../../assets/logo.png" alt="logo" height="50" style="margin: 0;" />
+    </el-menu-item>
     <div class="flex-grow" />
     <el-menu-item index="license_plate">车牌识别</el-menu-item>
     <el-sub-menu>

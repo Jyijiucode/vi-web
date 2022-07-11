@@ -7,7 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    BtnCard: typeof import('./src/components/btn-card.vue')['default']
+    ColumnList: typeof import('./src/components/list/ColumnList.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
@@ -33,7 +33,6 @@ declare module '@vue/runtime-core' {
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     GlobalFooter: typeof import('./src/components/layout/GlobalFooter.vue')['default']
     GlobalHeader: typeof import('./src/components/layout/GlobalHeader.vue')['default']
-    Header: typeof import('./src/components/layout/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
