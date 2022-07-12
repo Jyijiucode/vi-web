@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>Driver Behavior1111</h1>
+  <h1>Driver Behavior</h1>
 </template>
 
 <style lang="scss" scoped>
