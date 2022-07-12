@@ -6,86 +6,86 @@ const footerMenu = reactive([
     title: 'AI404',
     menus: [
       {
-        name: 'careers',
+        name: '社会招聘',
         link: ''
       },
       {
-        name: 'news',
+        name: '校园招聘',
         link: ''
       },
       {
-        name: 'topic',
+        name: '国际招聘',
         link: ''
       },
       {
-        name: 'diversity',
+        name: '简介',
         link: ''
       },
       {
-        name: 'accessibility',
+        name: '成员',
         link: ''
       }
     ]
   },
   {
-    title: 'discovery',
+    title: '联系我们',
     menus: [
       {
-        name: 'trustAndSafe',
+        name: '客户服务',
         link: ''
       },
       {
-        name: 'invite',
+        name: '合作洽谈',
         link: ''
       },
       {
-        name: 'evection',
+        name: '采购信息',
         link: ''
       },
       {
-        name: 'magzine',
+        name: '媒体',
         link: ''
       },
       {
-        name: 'airbnborg',
+        name: '投资者',
         link: ''
       }
     ]
   },
   {
-    title: 'rent',
+    title: '法律信息',
     menus: [
       {
-        name: 'whyRent',
+        name: '服务协议',
         link: ''
       },
       {
-        name: 'hospitality',
+        name: '隐私政策',
         link: ''
       },
       {
-        name: 'responsibleHosting',
+        name: '知识产权',
         link: ''
       },
       {
-        name: 'experiences',
+        name: '举报',
         link: ''
       },
       {
-        name: 'resources',
+        name: '法律团队',
         link: ''
       }
     ]
   },
   {
-    title: 'service',
+    title: '商业合作',
     menus: [
       {
-        name: 'help',
+        name: '推广',
         link: ''
       },
       {
-        name: 'neighbors',
+        name: '营销中心',
         link: ''
       }
     ]
