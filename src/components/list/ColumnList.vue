@@ -26,7 +26,7 @@ const props = defineProps({
     >
       <el-card :body-style="{ padding: '0px' }">
         <img
-        src="https://images.unsplash.com/photo-1657523388481-18756fa938df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+        :src="column.img"
         class="image" />
         <div style="padding: 14px">
           <span>{{ column.title }}</span>
