@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import ColumnList, { ColumnProps } from '../../components/list/ColumnList.vue'
-
+import CarouselCard from '../../components/list/CarouselCard.vue'
 const testData: ColumnProps[] = [
   {
     id: 1,
@@ -45,6 +45,9 @@ const testData2: ColumnProps[] = [
 </script>
 
 <template>
+  <div class ="carousel">
+    <carousel-card></carousel-card>
+  </div>
   <div class="main-container">
     <column-list :list="testData" />
     <column-list :list="testData2"/>
