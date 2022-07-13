@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>车型识别</h1>
+  <h1>Vehicle_attr</h1>
 </template>
 
 <style lang="scss" scoped>
