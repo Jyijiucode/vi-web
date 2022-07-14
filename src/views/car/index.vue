@@ -16,15 +16,17 @@
           </div>
         </div>
       </el-main>
-      <el-button  class="button" type="primary" size="large">识别车型</el-button>
       <el-main>
-        <p>该车辆型号:</p>
-        <input type="text" class="t1">
-        <p>该车辆年份:</p>
-        <input type="text" class="t2">
-        <p>该车辆颜色:</p>
-        <input type="text" class="t3">
+        <el-card class="box-card">
+          <div class="clearfix">
+            <el-button style="float: left; padding: 3px 0" type="primary">识别车型</el-button>
+          </div>
+          <div v-for="a in 3" :key="a" class="text item">
+            {{'识别结果'+ a+':'}}
+          </div>
+        </el-card>
       </el-main>
+
     </el-container>
 </template>
 
@@ -105,23 +107,26 @@ export default {
         z-index: 4;
     }
 }
-.button{
-  position: absolute;
-  left: 52%;
-}
-.e1{
-  position: relative;
-  width: 460px;
-  height: 100%;
-}
-.t1{
-  position: relative;
-  width: 200px;
-  height: 50px;
-}
-.t3{
-  position: relative;
-  width: 200px;
-  height: 50px;
-}
+
+.text {
+    font-size: 20px;
+  }
+
+  .item {
+    margin-bottom: 100px;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+  .clearfix:after {
+    clear: both
+  }
+
+  .box-card {
+    width: 480px;
+    height: 390px;
+  }
 </style>
